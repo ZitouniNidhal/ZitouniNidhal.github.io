@@ -1,52 +1,72 @@
-# Hi, I'm Zitouni Nidhal 👋
-### **AI Research Master’s Student | LLM & RAG Specialist | Applied AI Researcher**
+---
+<!-- Header with a professional touch -->
+<h1 align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=30&duration=3000&pause=1000&color=007ACC&center=true&vCenter=true&width=500&lines=Hi+there%2C+I'm+Zitouni+Nidhal;AI+Research+Master's+Student;LLM+%26+RAG+Specialist;Applied+AI+Researcher" alt="Typing Animation" />
+</h1>
 
-I’m an **AI Research Master’s Student** with a strong academic foundation in **machine learning, deep learning, and artificial intelligence**. My work focuses on **LLM-powered systems, Retrieval-Augmented Generation (RAG), and applied AI research**, with hands-on experience in **Python, FastAPI, Docker, and vector databases**. I’m passionate about bridging the gap between **theoretical research and practical AI applications**.
+<!-- Professional tagline -->
+<h3 align="center">
+  <samp>
+    <br/>
+    I build <b>intelligent systems</b> using LLMs, RAG, and applied AI research.
+    <br/>
+    Passionate about <b>bridging the gap</b> between academic research and real-world AI applications.
+    <br/>
+    <br/>
+  </samp>
+</h3>
+
+<!-- Connect with me section -->
+<p align="center">
+  <a href="mailto:your-email@example.com" target="_blank">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  <a href="https://www.linkedin.com/in/your-profile" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://github.com/your-username" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+  <a href="https://twitter.com/your-handle" target="_blank">
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" />
+  </a>
+  <a href="https://www.kaggle.com/your-profile" target="_blank">
+    <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle" />
+  </a>
+</p>
 
 ---
 
-## 🔧 **Technical Skills**
+## **🔧 Technical Skills**
 
 ### **Programming Languages**
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=postgresql&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnu-bash&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white)
 
 ### **AI & Machine Learning**
-- **Frameworks:**
-  ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
-  ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white)
-  ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
-- **LLMs & NLP:**
-  - Prompt Engineering & Optimization
-  - Fine-Tuning (LoRA, PEFT, QLoRA)
-  - LLM Evaluation & Benchmarking
-  - AI Agents & Tool Calling
-- **RAG & Vector Databases:**
-  - FAISS, Pinecone, Chroma, Weaviate
-  - Similarity Search & Knowledge Retrieval
-- **Computer Vision:**
-  - Object Detection (YOLO, Faster R-CNN)
-  - Image Segmentation (U-Net, Mask R-CNN)
+| **Category**          | **Skills & Tools**                                                                                     |
+|-----------------------|-------------------------------------------------------------------------------------------------------|
+| **Frameworks**         | ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white) |
+| **LLMs & NLP**        | Prompt Engineering, Fine-Tuning (LoRA, PEFT, QLoRA), LLM Evaluation, AI Agents, Tool Calling          |
+| **RAG & Vector DBs**  | FAISS, Pinecone, Chroma, Weaviate, Similarity Search, Knowledge Retrieval                              |
+| **Computer Vision**   | Object Detection (YOLO, Faster R-CNN), Image Segmentation (U-Net, Mask R-CNN)                          |
 
 ### **Backend & APIs**
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
-![RESTful APIs](https://img.shields.io/badge/RESTful_APIs-000000?style=flat&logo=rest&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![RESTful APIs](https://img.shields.io/badge/RESTful_APIs-000000?style=flat-square&logo=rest&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 
 ### **Databases**
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white)
-- **Vector Databases:** FAISS, Pinecone, Chroma, Weaviate
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
 
 ### **DevOps & Cloud**
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=github-actions&logoColor=white)
-![Azure](https://img.shields.io/badge/Microsoft_Azure-0078D4?style=flat&logo=microsoft-azure&logoColor=white)
-- **CI/CD:** GitHub Actions, Jenkins
-- **Cloud Platforms:** Microsoft Azure (Azure ML, Azure AI Services)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)
+![Azure](https://img.shields.io/badge/Microsoft_Azure-0078D4?style=flat-square&logo=microsoft-azure&logoColor=white)
 
 ### **Research & Experimentation**
 - Experimentation Workflows
@@ -56,62 +76,79 @@ I’m an **AI Research Master’s Student** with a strong academic foundation in
 
 ---
 
-## 📂 **Featured Projects**
+## **📂 Featured Projects**
 
-### **LLM & RAG Projects**
-| **Project**               | **Description**                                                                 | **Tools/Tech**                          | **Link**                     |
-|----------------------------|---------------------------------------------------------------------------------|-----------------------------------------|------------------------------|
-| **LLM Fine-Tuning Pipeline** | Fine-tuned LLMs (e.g., Llama, Mistral) for domain-specific tasks using LoRA/PEFT. | PyTorch, Hugging Face, Weights & Biases | [GitHub](link-to-project)    |
-| **RAG Pipeline with FAISS** | Built a knowledge retrieval system using FAISS for efficient document search. | FAISS, FastAPI, Python                | [GitHub](link-to-project)    |
-| **AI-Powered Chatbot**      | Developed a chatbot using RAG and LLMs for question-answering over custom datasets. | LangChain, Pinecone, FastAPI          | [GitHub](link-to-project)    |
+### **🤖 LLM & RAG Projects**
+| **Project**               | **Description**                                                                                     | **Tech Stack**                                                                                     | **Link**                     |
+|----------------------------|-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|------------------------------|
+| **LLM Fine-Tuning Pipeline** | Fine-tuned LLMs (e.g., Llama, Mistral) for domain-specific tasks using LoRA/PEFT.                     | PyTorch, Hugging Face, Weights & Biases, FAISS                                                    | [GitHub](link-to-project)    |
+| **RAG Pipeline with FAISS** | Built a knowledge retrieval system using FAISS for efficient document search.                     | FAISS, FastAPI, Python, Docker                                                                   | [GitHub](link-to-project)    |
+| **AI-Powered Chatbot**      | Developed a chatbot using RAG and LLMs for question-answering over custom datasets.                 | LangChain, Pinecone, FastAPI, React (Frontend)                                                   | [GitHub](link-to-project)    |
 
-### **Computer Vision Projects**
-| **Project**               | **Description**                                                                 | **Tools/Tech**                          | **Link**                     |
-|----------------------------|---------------------------------------------------------------------------------|-----------------------------------------|------------------------------|
-| **Object Detection Model**  | Trained a YOLOv8 model for real-time object detection in industrial settings.   | PyTorch, OpenCV, Roboflow              | [GitHub](link-to-project)    |
-| **Image Segmentation**      | Implemented U-Net for medical image segmentation with high accuracy.           | TensorFlow, Keras, OpenCV              | [GitHub](link-to-project)    |
+### **👁️ Computer Vision Projects**
+| **Project**               | **Description**                                                                                     | **Tech Stack**                                                                                     | **Link**                     |
+|----------------------------|-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|------------------------------|
+| **Object Detection Model**  | Trained a YOLOv8 model for real-time object detection in industrial settings.                         | PyTorch, OpenCV, Roboflow, Docker                                                                | [GitHub](link-to-project)    |
+| **Image Segmentation**      | Implemented U-Net for medical image segmentation with high accuracy.                               | TensorFlow, Keras, OpenCV, Weights & Biases                                                     | [GitHub](link-to-project)    |
 
-### **Backend & API Projects**
-| **Project**               | **Description**                                                                 | **Tools/Tech**                          | **Link**                     |
-|----------------------------|---------------------------------------------------------------------------------|-----------------------------------------|------------------------------|
-| **FastAPI LLM Service**     | Deployed an LLM as a RESTful API for scalable inference.                       | FastAPI, Docker, Nginx                 | [GitHub](link-to-project)    |
-| **Vector DB API**           | Built an API for similarity search using FAISS and FastAPI.                     | FAISS, FastAPI, PostgreSQL             | [GitHub](link-to-project)    |
-
----
-
-## 📚 **Research Interests**
-- **Large Language Models (LLMs):** Fine-tuning, evaluation, and deployment.
-- **Retrieval-Augmented Generation (RAG):** Knowledge retrieval and augmentation.
-- **AI for Industry:** Applied AI solutions for real-world problems.
-- **Model Optimization:** Quantization, pruning, and efficient inference.
-- **Ethical AI:** Bias mitigation, fairness, and responsible AI.
+### **⚙️ Backend & API Projects**
+| **Project**               | **Description**                                                                                     | **Tech Stack**                                                                                     | **Link**                     |
+|----------------------------|-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|------------------------------|
+| **FastAPI LLM Service**     | Deployed an LLM as a RESTful API for scalable inference.                                           | FastAPI, Docker, Nginx, PostgreSQL                                                               | [GitHub](link-to-project)    |
+| **Vector DB API**           | Built an API for similarity search using FAISS and FastAPI.                                         | FAISS, FastAPI, PostgreSQL, Docker                                                              | [GitHub](link-to-project)    |
 
 ---
 
-## 📝 **Publications & Papers**
-- **[Paper Title 1](link-to-paper)** – *Conference/Journal Name*, Year
-  - Brief description of the paper and its contributions.
-- **[Paper Title 2](link-to-paper)** – *Conference/Journal Name*, Year
-  - Brief description of the paper and its contributions.
+## **📚 Research Interests**
+- **Large Language Models (LLMs):** Fine-tuning, evaluation, and deployment strategies.
+- **Retrieval-Augmented Generation (RAG):** Knowledge retrieval, vector databases, and hybrid search.
+- **AI for Industry:** Applied AI solutions for real-world challenges in healthcare, finance, and automation.
+- **Model Optimization:** Quantization, pruning, and efficient inference for edge devices.
+- **Ethical AI:** Bias mitigation, fairness, and responsible AI deployment.
 
 ---
 
-## 🎓 **Education**
+## **📝 Publications & Papers**
+| **Title**                     | **Conference/Journal**       | **Year** | **Link**                     |
+|-------------------------------|------------------------------|----------|------------------------------|
+| **Paper Title 1**             | *Conference/Journal Name*    | 2023     | [PDF](link-to-paper)         |
+| **Paper Title 2**             | *Conference/Journal Name*    | 2024     | [PDF](link-to-paper)         |
+
+---
+
+## **🎓 Education**
 - **Master’s in AI/ML Research** – [Your University], [Year]
-  - Thesis: [Your Thesis Topic]
-  - Coursework: Deep Learning, NLP, Computer Vision, MLOps
+  - Thesis: *"Your Thesis Topic: Subtitle or Brief Description"*
+  - Relevant Coursework: Deep Learning, Natural Language Processing, Computer Vision, MLOps
 - **Bachelor’s in Computer Science** – [Your University], [Year]
 
 ---
 
-## 📫 **Let’s Connect!**
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/your-profile)
-[![Email](https://img.shields.io/badge/Email-Contact-D14836?style=flat&logo=gmail&logoColor=white)](mailto:your-email@example.com)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=flat&logo=github&logoColor=white)](https://github.com/your-username)
-[![Kaggle](https://img.shields.io/badge/Kaggle-Follow-20BEFF?style=flat&logo=kaggle&logoColor=white)](https://www.kaggle.com/your-profile)
-[![Twitter](https://img.shields.io/badge/Twitter-Follow-1DA1F2?style=flat&logo=twitter&logoColor=white)](https://twitter.com/your-handle)
+## **📊 GitHub Stats**
+<p align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=your-username&show_icons=true&theme=radical&include_all_commits=true&count_private=true" alt="GitHub Stats" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=your-username&layout=compact&theme=radical&langs_count=8" alt="Top Languages" />
+</p>
 
 ---
-### **🔍 Fun Fact:**
-When I’m not researching AI, I enjoy [your hobby, e.g., reading sci-fi, hiking, or contributing to open-source projects]!
 
+## **📫 Let’s Connect!**
+<p align="center">
+  <a href="mailto:your-email@example.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  <a href="https://www.linkedin.com/in/your-profile">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://github.com/your-username">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+  <a href="https://twitter.com/your-handle">
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" />
+  </a>
+</p>
+
+---
+
+### **🔍 Fun Fact:**
+> *"When I’m not researching AI, I enjoy contributing to open-source projects and exploring the latest advancements in quantum computing!"*
