@@ -1,4 +1,4 @@
-# Hi, I'm Zitouni Nidhal 👋
+# Hi, I'm  Nidhal Zitouni 👋
 ### **AI Research Master’s Student | LLM & RAG Specialist | Applied AI Researcher**
 
 I’m an **AI Research Master’s Student** with a strong academic foundation in **machine learning, deep learning, and artificial intelligence**. My work focuses on **LLM-powered systems, Retrieval-Augmented Generation (RAG), and applied AI research**, with hands-on experience in **Python, FastAPI, Docker, and vector databases**. I’m passionate about bridging the gap between **theoretical research and practical AI applications**.
