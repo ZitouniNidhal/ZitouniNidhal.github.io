@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zitouni | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Zitouni</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section Accueil -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Bonjour, je suis <span>Zitouni</span></h2>
+                <p class="subtitle">Chercheur en IA/ML</p>
+                <p>Spécialisé en <strong>Deep Learning</strong> et <strong>Computer Vision</strong>.</p>
+                <a href="#projects" class="btn">Voir mes projets</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/profile.jpg" alt="Zitouni" onerror="this.style.display='none'">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>À propos de moi</h2>
+            <div class="about-content">
+                <p>
+                    Je suis un chercheur passionné par l'<strong>intelligence artificielle</strong> et le <strong>Machine Learning</strong>.
+                    Mon travail se concentre sur le développement de modèles avancés pour la <strong>Computer Vision</strong>, 
+                    en utilisant des frameworks comme <strong>PyTorch</strong> et <strong>TensorFlow</strong>.
+                </p>
+                <p>
+                    J'explore également des applications pratiques de l'IA dans des domaines comme la détection d'objets, 
+                    la segmentation d'images, et l'analyse de données visuelles.
+                </p>
+                <p>
+                    Actif sur <strong>Kaggle</strong>, je participe régulièrement à des compétitions et collabore sur des projets open source.
+                </p>
+                <div class="cv-link">
+                    <a href="#" class="btn">Télécharger mon CV <i class="fas fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Mes projets</h2>
+            <div class="projects-grid">
+                <!-- Projet 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project1.jpg" alt="Projet Computer Vision" onerror="this.style.display='none'">
+                    </div>
+                    <h3>Détection d'objets avec YOLOv8</h3>
+                    <p>Modèle de détection d'objets en temps réel optimisé pour des environnements embarqués.</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" target="_blank"><i class="fas fa-link"></i> Demo</a>
+                    </div>
+                </div>
+                
+                <!-- Projet 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project2.jpg" alt="Projet Segmentation" onerror="this.style.display='none'">
+                    </div>
+                    <h3>Segmentation sémantique avec U-Net</h3>
+                    <p>Segmentation d'images médicales pour l'analyse automatisée de radiographies.</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" target="_blank"><i class="fas fa-link"></i> Article</a>
+                    </div>
+                </div>
+                
+                <!-- Projet 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project3.jpg" alt="Projet Kaggle" onerror="this.style.display='none'">
+                    </div>
+                    <h3>Compétition Kaggle : Classification d'images</h3>
+                    <p>Solution classée dans le top 10% pour une compétition de classification d'images naturelles.</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank"><i class="fab fa-kaggle"></i> Kaggle</a>
+                        <a href="#" target="_blank"><i class="fas fa-link"></i> Notebook</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Mes compétences</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>IA / Machine Learning</h3>
+                    <ul>
+                        <li>Deep Learning</li>
+                        <li>Computer Vision</li>
+                        <li>Apprentissage supervisé/non supervisé</li>
+                        <li>Optimisation de modèles</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Outils et Frameworks</h3>
+                    <ul>
+                        <li>PyTorch / TensorFlow</li>
+                        <li>OpenCV</li>
+                        <li>Scikit-learn</li>
+                        <li>Kaggle / Colab</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Analyse de données</h3>
+                    <ul>
+                        <li>Pandas / NumPy</li>
+                        <li>Visualisation (Matplotlib, Seaborn)</li>
+                        <li>Prétraitement de données</li>
+                        <li>Feature Engineering</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contactez-moi</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Votre nom" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Votre email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Votre message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Envoyer <i class="fas fa-paper-plane"></i></button>
+            </form>
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="#" target="_blank"><i class="fab fa-kaggle"></i> Kaggle</a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Zitouni. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Script pour les animations -->
+    <script src="script.js"></script>
+</body>
+</html>
