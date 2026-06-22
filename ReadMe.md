@@ -107,31 +107,7 @@
 | **FastAPI LLM Service**         | Deployed an LLM as a RESTful API for scalable inference. Handles 100+ requests/sec.               | FastAPI, Docker, Nginx, PostgreSQL, Hugging Face                                                | [GitHub](link-to-project)    |
 | **Vector DB API**               | Built an API for similarity search using FAISS and FastAPI. Supports hybrid search.              | FAISS, FastAPI, PostgreSQL, Docker, Pinecone                                                    | [GitHub](link-to-project)    |
 
----
 
-## **📚 Research & Publications**
-
-### **📝 Published Papers**
-| **Title**                     | **Conference/Journal**       | **Year** | **Link**                     | **Citations** |
-|-------------------------------|------------------------------|----------|------------------------------|---------------|
-| **"Title of Paper 1"**        | *Conference/Journal Name*    | 2023     | [PDF](link-to-paper)         | 📊 42         |
-| **"Title of Paper 2"**        | *Conference/Journal Name*    | 2024     | [PDF](link-to-paper)         | 📊 18         |
-
-### **🎓 Thesis & Academic Work**
-- **Master’s Thesis:** *"Title of Your Thesis: Subtitle or Brief Description"*
-  - Focus: [Briefly describe your focus, e.g., "Fine-tuning LLMs for domain-specific applications using RAG."]
-  - Advisor: [Your Advisor’s Name]
-  - [University Name], [Year]
-
----
-
-## **🎓 Education**
-| **Degree**                     | **Institution**               | **Year**     | **Relevant Coursework**                                                                 |
-|--------------------------------|--------------------------------|--------------|----------------------------------------------------------------------------------------|
-| **Master’s in AI/ML Research** | [Your University]              | 2022–2024    | Deep Learning, Natural Language Processing, Computer Vision, MLOps, Ethical AI      |
-| **Bachelor’s in Computer Science** | [Your University]          | 2018–2022    | Algorithms, Data Structures, Machine Learning, Software Engineering, Databases      |
-
----
 
 ## **📊 GitHub Stats & Activity**
 <p align="center">
