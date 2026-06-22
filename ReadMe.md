@@ -178,11 +178,5 @@
 
 ---
 
-### **📌 Pinned Repositories**
-Here are some of my **notable open-source contributions and projects**:
-- [🔗 **LLM Fine-Tuning Pipeline**](link-to-repo): A PyTorch-based pipeline for fine-tuning LLMs using LoRA.
-- [🔗 **RAG System with FAISS**](link-to-repo): A scalable RAG system using FAISS and FastAPI.
-- [🔗 **FastAPI LLM Service**](link-to-repo): A production-ready API for deploying LLMs.
-- [🔗 **Object Detection with YOLOv8**](link-to-repo): Real-time object detection for industrial applications.
 
 ---
