@@ -4,187 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zitouni | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Barre de navigation -->
     <header>
-        <div class="container">
-            <h1 class="logo">Zitouni</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Accueil</a></li>
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="#projects">Projets</a></li>
-                    <li><a href="#skills">Compétences</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <button class="menu-toggle" aria-label="Toggle Menu">
-                    <i class="fas fa-bars"></i>
-                </button>
+        <div class="nav-container">
+            <nav class="main-nav">
+                <a href="#projects">Publications</a>
+                <a href="#about">Expérience</a>
+                <a href="#skills">Compétences</a>
+                <a href="#">Enseignement</a>
+                <a href="#">Service</a>
+                <a href="#">CV</a>
+                <a href="#contact">Contact</a>
             </nav>
+            <div class="social-icons">
+                <a href="mailto:contact@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="#" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
         </div>
     </header>
 
-    <!-- Section Accueil -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h2>Bonjour, je suis <span>Zitouni</span></h2>
-                <p class="subtitle">Chercheur en IA/ML</p>
-                <p>Spécialisé en <strong>Deep Learning</strong> et <strong>Computer Vision</strong>.</p>
-                <a href="#projects" class="btn">Voir mes projets</a>
-            </div>
-            <div class="hero-image">
-                <img src="images/profile.jpg" alt="Zitouni" onerror="this.style.display='none'">
-            </div>
-        </div>
-    </section>
+    <main class="container">
+        <section class="hero-name">
+            <h1><strong>Zitouni</strong></h1>
+        </section>
 
-    <!-- Section À propos -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>À propos de moi</h2>
-            <div class="about-content">
-                <p>
-                    Je suis un chercheur passionné par l'<strong>intelligence artificielle</strong> et le <strong>Machine Learning</strong>.
-                    Mon travail se concentre sur le développement de modèles avancés pour la <strong>Computer Vision</strong>, 
-                    en utilisant des frameworks comme <strong>PyTorch</strong> et <strong>TensorFlow</strong>.
-                </p>
-                <p>
-                    J'explore également des applications pratiques de l'IA dans des domaines comme la détection d'objets, 
-                    la segmentation d'images, et l'analyse de données visuelles.
-                </p>
-                <p>
-                    Actif sur <strong>Kaggle</strong>, je participe régulièrement à des compétitions et collabore sur des projets open source.
-                </p>
-                <div class="cv-link">
-                    <a href="#" class="btn">Télécharger mon CV <i class="fas fa-download"></i></a>
-                </div>
+        <section class="profile-section" id="about">
+            <div class="profile-image">
+                <img src="images/profile.jpg" alt="Zitouni" onerror="this.src='https://via.placeholder.com/300';this.onerror=null;">
             </div>
-        </div>
-    </section>
+            <div class="profile-bio">
+                <p>Bonjour ! Je suis chercheur en IA/ML, spécialisé en <strong>Computer Vision</strong> et <strong>Deep Learning</strong>. Je développe des modèles avancés en utilisant des frameworks comme PyTorch et TensorFlow.</p>
+                <p>J'explore des applications pratiques de l'IA, de la détection d'objets à la segmentation d'images. Mon travail s'articule autour de trois axes :</p>
+                
+                <ul class="research-threads">
+                    <li>→ <strong>Détection d'objets :</strong> <em>Comment optimiser la détection pour les environnements embarqués ?</em> (YOLOv8)</li>
+                    <li>→ <strong>Segmentation sémantique :</strong> <em>Comment automatiser l'analyse de radiographies ?</em> (U-Net)</li>
+                    <li>→ <strong>Analyse de données visuelles :</strong> <em>Classification d'images naturelles en compétition.</em> (Top 10% Kaggle)</li>
+                </ul>
+                <p>Je suis activement engagé sur Kaggle et collabore régulièrement sur des projets open source.</p>
+            </div>
+        </section>
 
-    <!-- Section Projets -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>Mes projets</h2>
-            <div class="projects-grid">
-                <!-- Projet 1 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/project1.jpg" alt="Projet Computer Vision" onerror="this.style.display='none'">
+        <section class="info-panels" id="contact">
+            <div class="job-banner">
+                <p><strong>À LA RECHERCHE D'OPPORTUNITÉS !</strong></p>
+                <p>Je suis ouvert à de nouveaux projets et collaborations en IA/ML. N'hésitez pas à me <a href="#contact">contacter</a> ou consulter mon <a href="#">CV</a>.</p>
+            </div>
+
+            <div class="news-travel-grid">
+                <div class="info-card scrollable">
+                    <div class="card-header">
+                        <h3>ACTUALITÉS</h3>
                     </div>
-                    <h3>Détection d'objets avec YOLOv8</h3>
-                    <p>Modèle de détection d'objets en temps réel optimisé pour des environnements embarqués.</p>
-                    <div class="project-links">
-                        <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
-                        <a href="#" target="_blank"><i class="fas fa-link"></i> Demo</a>
-                    </div>
+                    <ul class="timeline">
+                        <li>
+                            <span class="date-badge">Juin 2026</span>
+                            <p>Participation à une compétition Kaggle majeure en classification d'images.</p>
+                        </li>
+                        <li>
+                            <span class="date-badge">Fév 2026</span>
+                            <p>Publication d'un article sur la segmentation sémantique avec U-Net.</p>
+                        </li>
+                        <li>
+                            <span class="date-badge">Jan 2026</span>
+                            <p>Déploiement d'un modèle YOLOv8 pour environnement embarqué.</p>
+                        </li>
+                        <li>
+                            <span class="date-badge">Nov 2025</span>
+                            <p>Présentation au meetup de Data Science local sur l'optimisation de modèles de Deep Learning.</p>
+                        </li>
+                    </ul>
                 </div>
                 
-                <!-- Projet 2 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/project2.jpg" alt="Projet Segmentation" onerror="this.style.display='none'">
+                <div class="info-card scrollable">
+                    <div class="card-header">
+                        <h3>ÉVÉNEMENTS & RENCONTRES</h3>
+                        <span class="coffee-badge"><i class="fas fa-coffee"></i> Ouvert pour échanger !</span>
                     </div>
-                    <h3>Segmentation sémantique avec U-Net</h3>
-                    <p>Segmentation d'images médicales pour l'analyse automatisée de radiographies.</p>
-                    <div class="project-links">
-                        <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
-                        <a href="#" target="_blank"><i class="fas fa-link"></i> Article</a>
-                    </div>
-                </div>
-                
-                <!-- Projet 3 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/project3.jpg" alt="Projet Kaggle" onerror="this.style.display='none'">
-                    </div>
-                    <h3>Compétition Kaggle : Classification d'images</h3>
-                    <p>Solution classée dans le top 10% pour une compétition de classification d'images naturelles.</p>
-                    <div class="project-links">
-                        <a href="#" target="_blank"><i class="fab fa-kaggle"></i> Kaggle</a>
-                        <a href="#" target="_blank"><i class="fas fa-link"></i> Notebook</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Compétences -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2>Mes compétences</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fas fa-robot"></i>
-                    <h3>IA / Machine Learning</h3>
-                    <ul>
-                        <li>Deep Learning</li>
-                        <li>Computer Vision</li>
-                        <li>Apprentissage supervisé/non supervisé</li>
-                        <li>Optimisation de modèles</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-code"></i>
-                    <h3>Outils et Frameworks</h3>
-                    <ul>
-                        <li>PyTorch / TensorFlow</li>
-                        <li>OpenCV</li>
-                        <li>Scikit-learn</li>
-                        <li>Kaggle / Colab</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>Analyse de données</h3>
-                    <ul>
-                        <li>Pandas / NumPy</li>
-                        <li>Visualisation (Matplotlib, Seaborn)</li>
-                        <li>Prétraitement de données</li>
-                        <li>Feature Engineering</li>
+                    <ul class="timeline">
+                        <li>
+                            <span class="date-badge">À venir</span>
+                            <p>Conférence sur la Computer Vision <strong>(En ligne)</strong> – Présentation de projet.</p>
+                        </li>
+                        <li>
+                            <span class="date-badge">Permanent</span>
+                            <p>Participation active aux meetups Data Science locaux et virtuels.</p>
+                        </li>
                     </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Section Contact -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contactez-moi</h2>
-            <form class="contact-form">
-                <div class="form-group">
-                    <input type="text" placeholder="Votre nom" required>
+        <section class="research-focus" id="projects">
+            <div class="focus-card">
+                <h2>Détection d'objets avec YOLOv8 <span class="subtitle">Modèles temps réel</span></h2>
+                <p>Le monde physique regorge d'informations visuelles. Je développe des modèles de détection d'objets en temps réel, optimisés pour des environnements embarqués. L'objectif est de rendre ces systèmes suffisamment robustes et rapides pour opérer dans des conditions réelles et contraignantes.</p>
+                <div class="project-links">
+                    <a href="#"><i class="fab fa-github"></i> Code</a>
+                    <a href="#"><i class="fas fa-link"></i> Demo</a>
                 </div>
-                <div class="form-group">
-                    <input type="email" placeholder="Votre email" required>
-                </div>
-                <div class="form-group">
-                    <textarea placeholder="Votre message" required></textarea>
-                </div>
-                <button type="submit" class="btn">Envoyer <i class="fas fa-paper-plane"></i></button>
-            </form>
-            <div class="social-links">
-                <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                <a href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="#" target="_blank"><i class="fab fa-kaggle"></i> Kaggle</a>
-                <a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
             </div>
-        </div>
-    </section>
 
-    <!-- Pied de page -->
+            <div class="focus-card" id="skills">
+                <h2>Segmentation sémantique avec U-Net <span class="subtitle">Imagerie médicale</span></h2>
+                <p>L'analyse d'images médicales nécessite une précision au pixel près. Mes travaux sur la segmentation sémantique s'appliquent à l'analyse automatisée de radiographies, facilitant le diagnostic médical grâce à des modèles profonds comme U-Net.</p>
+                <div class="project-links">
+                    <a href="#"><i class="fab fa-github"></i> Code</a>
+                    <a href="#"><i class="fas fa-file-alt"></i> Article</a>
+                </div>
+            </div>
+            
+            <div class="focus-card">
+                <h2>Compétences Techniques <span class="subtitle">Outils & Frameworks</span></h2>
+                <p>Maîtrise de l'apprentissage supervisé et non supervisé avec <strong>PyTorch, TensorFlow, OpenCV</strong>, et <strong>Scikit-learn</strong>. Solide expertise en analyse et prétraitement de données avec <strong>Pandas, NumPy</strong> et des outils de visualisation avancés.</p>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <div class="container">
-            <p>&copy; 2026 Zitouni. Tous droits réservés.</p>
+        <div class="footer-content">
+            <p>&copy; Copyright 2026 Zitouni. Design inspiré du thème académique. Code disponible sur GitHub.</p>
         </div>
     </footer>
-
-    <!-- Script pour les animations -->
-    <script src="script.js"></script>
 </body>
 </html>
