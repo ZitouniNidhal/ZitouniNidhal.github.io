@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +9,16 @@
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="nav-container">
             <nav class="main-nav">
                 <a href="#projects">Publications</a>
-                <a href="#about">Expérience</a>
-                <a href="#skills">Compétences</a>
-                <a href="#">Enseignement</a>
+                <a href="#about">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#">Teaching</a>
                 <a href="#">Service</a>
                 <a href="#">CV</a>
                 <a href="#contact">Contact</a>
@@ -33,7 +33,7 @@
 
     <main class="container">
         <section class="hero-name">
-            <h1><strong>Zitouni</strong></h1>
+            <h1><strong>Zitouni</strong> Researcher</h1>
         </section>
 
         <section class="profile-section" id="about">
@@ -41,72 +41,76 @@
                 <img src="images/profile.jpg" alt="Zitouni" onerror="this.src='https://via.placeholder.com/300';this.onerror=null;">
             </div>
             <div class="profile-bio">
-                <p>Bonjour ! Je suis chercheur en IA/ML, spécialisé en <strong>Computer Vision</strong> et <strong>Deep Learning</strong>. Je développe des modèles avancés en utilisant des frameworks comme PyTorch et TensorFlow.</p>
-                <p>J'explore des applications pratiques de l'IA, de la détection d'objets à la segmentation d'images. Mon travail s'articule autour de trois axes :</p>
+                <p>Hello! I'm an AI/ML researcher, specializing in Computer Vision and Deep Learning. I develop advanced models using frameworks like PyTorch and TensorFlow.</p>
+                <p>I explore practical applications of AI. My work spans three main threads:</p>
                 
                 <ul class="research-threads">
-                    <li>→ <strong>Détection d'objets :</strong> <em>Comment optimiser la détection pour les environnements embarqués ?</em> (YOLOv8)</li>
-                    <li>→ <strong>Segmentation sémantique :</strong> <em>Comment automatiser l'analyse de radiographies ?</em> (U-Net)</li>
-                    <li>→ <strong>Analyse de données visuelles :</strong> <em>Classification d'images naturelles en compétition.</em> (Top 10% Kaggle)</li>
+                    <li>&rarr; <strong>Object Detection:</strong> <em>How to optimize detection for edge and embedded environments?</em> (YOLOv8)</li>
+                    <li>&rarr; <strong>Semantic Segmentation:</strong> <em>How to automate the analysis of medical radiographs?</em> (U-Net)</li>
+                    <li>&rarr; <strong>Visual Data Analysis:</strong> <em>Natural image classification in competitive settings.</em> (Top 10% Kaggle)</li>
                 </ul>
-                <p>Je suis activement engagé sur Kaggle et collabore régulièrement sur des projets open source.</p>
+                <p>I am actively engaged on Kaggle and regularly collaborate on open source projects.</p>
             </div>
         </section>
 
         <section class="info-panels" id="contact">
             <div class="job-banner">
-                <p><strong>À LA RECHERCHE D'OPPORTUNITÉS !</strong></p>
-                <p>Je suis ouvert à de nouveaux projets et collaborations en IA/ML. N'hésitez pas à me <a href="#contact">contacter</a> ou consulter mon <a href="#">CV</a>.</p>
+                <p class="job-title">I'M ON THE JOB MARKET!</p>
+                <p class="job-desc">I'm open to new AI/ML projects and collaborations. Feel free to <a href="#contact">contact me</a> or grab my <a href="#">CV</a>.</p>
             </div>
 
             <div class="news-travel-grid">
-                <div class="info-card scrollable">
+                <div class="info-card">
                     <div class="card-header">
-                        <h3>ACTUALITÉS</h3>
+                        <h3>RECENT NEWS</h3>
                     </div>
-                    <ul class="timeline">
-                        <li>
-                            <span class="date-badge">Juin 2026</span>
-                            <p>Participation à une compétition Kaggle majeure en classification d'images.</p>
-                        </li>
-                        <li>
-                            <span class="date-badge">Fév 2026</span>
-                            <p>Publication d'un article sur la segmentation sémantique avec U-Net.</p>
-                        </li>
-                        <li>
-                            <span class="date-badge">Jan 2026</span>
-                            <p>Déploiement d'un modèle YOLOv8 pour environnement embarqué.</p>
-                        </li>
-                        <li>
-                            <span class="date-badge">Nov 2025</span>
-                            <p>Présentation au meetup de Data Science local sur l'optimisation de modèles de Deep Learning.</p>
-                        </li>
-                    </ul>
+                    <div class="scrollable">
+                        <ul class="timeline">
+                            <li>
+                                <span class="date-badge">Jun 2026</span>
+                                <p>Participated in a major Kaggle competition for image classification.</p>
+                            </li>
+                            <li>
+                                <span class="date-badge">Feb 2026</span>
+                                <p>Published a paper on semantic segmentation with U-Net.</p>
+                            </li>
+                            <li>
+                                <span class="date-badge">Jan 2026</span>
+                                <p>Deployed a YOLOv8 model for edge environments.</p>
+                            </li>
+                            <li>
+                                <span class="date-badge">Nov 2025</span>
+                                <p>Presented at the local Data Science meetup on optimizing Deep Learning models.</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 
-                <div class="info-card scrollable">
+                <div class="info-card">
                     <div class="card-header">
-                        <h3>ÉVÉNEMENTS & RENCONTRES</h3>
-                        <span class="coffee-badge"><i class="fas fa-coffee"></i> Ouvert pour échanger !</span>
+                        <h3>UPCOMING TRAVEL</h3>
+                        <span class="coffee-badge"><i class="fas fa-coffee"></i> Coffee chats welcome!</span>
                     </div>
-                    <ul class="timeline">
-                        <li>
-                            <span class="date-badge">À venir</span>
-                            <p>Conférence sur la Computer Vision <strong>(En ligne)</strong> – Présentation de projet.</p>
-                        </li>
-                        <li>
-                            <span class="date-badge">Permanent</span>
-                            <p>Participation active aux meetups Data Science locaux et virtuels.</p>
-                        </li>
-                    </ul>
+                    <div class="scrollable">
+                        <ul class="timeline">
+                            <li>
+                                <span class="date-badge">Upcoming</span>
+                                <p>Computer Vision Conference <strong>(Online)</strong> – Project Presentation.</p>
+                            </li>
+                            <li>
+                                <span class="date-badge">Ongoing</span>
+                                <p>Active participation in local and virtual Data Science meetups.</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="research-focus" id="projects">
             <div class="focus-card">
-                <h2>Détection d'objets avec YOLOv8 <span class="subtitle">Modèles temps réel</span></h2>
-                <p>Le monde physique regorge d'informations visuelles. Je développe des modèles de détection d'objets en temps réel, optimisés pour des environnements embarqués. L'objectif est de rendre ces systèmes suffisamment robustes et rapides pour opérer dans des conditions réelles et contraignantes.</p>
+                <h2>Object Detection <span class="subtitle">Real-time models</span></h2>
+                <p>The physical world is full of visual information. I develop real-time object detection models optimized for embedded environments. The goal is to make these systems robust and fast enough to operate under real-world constraints.</p>
                 <div class="project-links">
                     <a href="#"><i class="fab fa-github"></i> Code</a>
                     <a href="#"><i class="fas fa-link"></i> Demo</a>
@@ -114,8 +118,8 @@
             </div>
 
             <div class="focus-card" id="skills">
-                <h2>Segmentation sémantique avec U-Net <span class="subtitle">Imagerie médicale</span></h2>
-                <p>L'analyse d'images médicales nécessite une précision au pixel près. Mes travaux sur la segmentation sémantique s'appliquent à l'analyse automatisée de radiographies, facilitant le diagnostic médical grâce à des modèles profonds comme U-Net.</p>
+                <h2>Semantic Segmentation <span class="subtitle">Medical Imaging</span></h2>
+                <p>Medical image analysis requires pixel-perfect precision. My work on semantic segmentation is applied to the automated analysis of radiographs, facilitating medical diagnosis through deep models like U-Net.</p>
                 <div class="project-links">
                     <a href="#"><i class="fab fa-github"></i> Code</a>
                     <a href="#"><i class="fas fa-file-alt"></i> Article</a>
@@ -123,15 +127,15 @@
             </div>
             
             <div class="focus-card">
-                <h2>Compétences Techniques <span class="subtitle">Outils & Frameworks</span></h2>
-                <p>Maîtrise de l'apprentissage supervisé et non supervisé avec <strong>PyTorch, TensorFlow, OpenCV</strong>, et <strong>Scikit-learn</strong>. Solide expertise en analyse et prétraitement de données avec <strong>Pandas, NumPy</strong> et des outils de visualisation avancés.</p>
+                <h2>Technical Skills <span class="subtitle">Tools & Frameworks</span></h2>
+                <p>Proficient in supervised and unsupervised learning using <strong>PyTorch, TensorFlow, OpenCV</strong>, and <strong>Scikit-learn</strong>. Strong expertise in data analysis and preprocessing with <strong>Pandas, NumPy</strong>, and advanced visualization tools.</p>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="footer-content">
-            <p>&copy; Copyright 2026 Zitouni. Design inspiré du thème académique. Code disponible sur GitHub.</p>
+            <p>&copy; Copyright 2026 Zitouni. Code available on GitHub.</p>
         </div>
     </footer>
 </body>
