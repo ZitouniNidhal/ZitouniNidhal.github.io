@@ -23,7 +23,7 @@ function initThemeToggle() {
     // Check for saved theme preference or use system preference
     const savedTheme = localStorage.getItem('theme');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const currentTheme = savedTheme || (prefersDark ? 'dark' : 'light');
+    let currentTheme = savedTheme || (prefersDark ? 'dark' : 'light');
 
     // Apply the theme
     document.documentElement.setAttribute('data-theme', currentTheme);
@@ -33,10 +33,10 @@ function initThemeToggle() {
 
     // Toggle theme on button click
     themeToggle.addEventListener('click', () => {
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        document.documentElement.setAttribute('data-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
-        updateThemeIcon(themeToggle, newTheme);
+        currentTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', currentTheme);
+        localStorage.setItem('theme', currentTheme);
+        updateThemeIcon(themeToggle, currentTheme);
         document.documentElement.classList.add('theme-transition');
         setTimeout(() => {
             document.documentElement.classList.remove('theme-transition');

@@ -753,20 +753,10 @@ a:hover {
     margin: 0 auto;
     padding: 0 var(--spacing-sm);
     font-size: var(--font-size-sm);
-}
-
-.footer-content a {
-    color: var(--footer-text);
-    text-decoration: underline;
-}
-
-.footer-content a:hover {
-    color: var(--accent-text);
-}
-
-.privacy-link {
-    margin-left: var(--spacing-sm);
-}
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-xs);
 
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 1024px) {
