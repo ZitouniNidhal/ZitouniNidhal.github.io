@@ -11,7 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
     initSmoothScroll();
     initScrollAnimations();
     initLazyLoading();
-    initIntersectionObserver();
+    initNewsletterForm();
+    initAccessibility();
 });
 
 // ===== THEME TOGGLE =====
@@ -36,6 +37,10 @@ function initThemeToggle() {
         document.documentElement.setAttribute('data-theme', newTheme);
         localStorage.setItem('theme', newTheme);
         updateThemeIcon(themeToggle, newTheme);
+        document.documentElement.classList.add('theme-transition');
+        setTimeout(() => {
+            document.documentElement.classList.remove('theme-transition');
+        }, 300);
     });
 
     // Listen for system theme changes
@@ -51,9 +56,9 @@ function initThemeToggle() {
 function updateThemeIcon(button, theme) {
     const icon = button.querySelector('i');
     if (!icon) return;
-    
-    icon.className = theme === 'dark' 
-        ? 'fas fa-sun' 
+
+    icon.className = theme === 'dark'
+        ? 'fas fa-sun'
         : 'fas fa-moon';
 }
 
@@ -61,7 +66,7 @@ function updateThemeIcon(button, theme) {
 function initMobileMenu() {
     const menuToggle = document.querySelector('.menu-toggle');
     const mainNav = document.querySelector('.main-nav');
-    
+
     if (!menuToggle || !mainNav) return;
 
     // Toggle menu visibility
@@ -130,7 +135,6 @@ function initSmoothScroll() {
 
 // ===== SCROLL ANIMATIONS =====
 function initScrollAnimations() {
-    // Use IntersectionObserver for better performance
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -144,7 +148,7 @@ function initScrollAnimations() {
     });
 
     // Observe all sections and cards
-    document.querySelectorAll('section, .focus-card, .info-card').forEach(el => {
+    document.querySelectorAll('section, .publication-card, .project-card, .skills-category, .teaching-card, .contact-card').forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(20px)';
         el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
@@ -158,14 +162,16 @@ function initLazyLoading() {
         // Native lazy loading is supported
         const lazyImages = document.querySelectorAll('img[loading="lazy"]');
         lazyImages.forEach(img => {
-            img.src = img.dataset.src || img.src;
+            if (img.dataset.src) {
+                img.src = img.dataset.src;
+            }
         });
     } else {
         // Fallback for browsers without native lazy loading
         const lazyLoadScript = document.createElement('script');
         lazyLoadScript.src = 'https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js';
         document.body.appendChild(lazyLoadScript);
-        
+
         lazyLoadScript.onload = () => {
             const lazyLoadInstance = new LazyLoad({
                 elements_selector: 'img[loading="lazy"]'
@@ -174,32 +180,58 @@ function initLazyLoading() {
     }
 }
 
-// ===== INTERSECTION OBSERVER FOR PERFORMANCE =====
-function initIntersectionObserver() {
-    // For any additional intersection-based features
-    const ioOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -100px 0px'
-    };
+// ===== NEWSLETTER FORM =====
+function initNewsletterForm() {
+    const form = document.querySelector('.newsletter-form');
+    if (!form) return;
 
-    const io = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // Add any intersection-based logic here
-                console.log(`${entry.target.id || entry.target.className} is now visible`);
-            }
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const emailInput = form.querySelector('input[type="email"]');
+        const email = emailInput.value.trim();
+
+        if (email) {
+            // Simulate form submission (replace with actual API call)
+            alert(`Thank you for subscribing with ${email}! We'll keep you updated.`);
+            emailInput.value = '';
+        } else {
+            alert('Please enter a valid email address.');
+        }
+    });
+}
+
+// ===== ACCESSIBILITY ENHANCEMENTS =====
+function initAccessibility() {
+    // Add focus styles for keyboard navigation
+    const focusableElements = document.querySelectorAll(
+        'a[href], button, input, select, textarea, [tabindex]:not([tabindex="-1"])'
+    );
+
+    focusableElements.forEach(el => {
+        el.addEventListener('focus', () => {
+            el.style.outline = '2px solid var(--accent-text)';
+            el.style.outlineOffset = '2px';
         });
-    }, ioOptions);
 
-    // Observe all elements with the 'observe' class
-    document.querySelectorAll('.observe').forEach(el => {
-        io.observe(el);
+        el.addEventListener('blur', () => {
+            el.style.outline = '';
+            el.style.outlineOffset = '';
+        });
+    });
+
+    // Add visible focus for custom buttons
+    document.querySelectorAll('.contact-button, .theme-toggle, .menu-toggle').forEach(button => {
+        button.addEventListener('focus', () => {
+            button.style.boxShadow = '0 0 0 3px rgba(89, 69, 110, 0.3)';
+        });
+
+        button.addEventListener('blur', () => {
+            button.style.boxShadow = '';
+        });
     });
 }
 
 // ===== UTILITY FUNCTIONS =====
-
-// Debounce function for performance
 function debounce(func, wait) {
     let timeout;
     return function executedFunction(...args) {
@@ -212,7 +244,6 @@ function debounce(func, wait) {
     };
 }
 
-// Throttle function for scroll events
 function throttle(func, limit) {
     let inThrottle;
     return function(...args) {
@@ -224,100 +255,23 @@ function throttle(func, limit) {
     };
 }
 
-// Check if element is in viewport
-function isInViewport(element) {
-    const rect = element.getBoundingClientRect();
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-}
-
-// ===== ACCESSIBILITY ENHANCEMENTS =====
-
-// Add focus styles for keyboard navigation
-function addFocusStyles() {
-    const focusableElements = document.querySelectorAll(
-        'a[href], button, input, select, textarea, [tabindex]:not([tabindex="-1"])'
-    );
-    
-    focusableElements.forEach(el => {
-        el.addEventListener('focus', () => {
-            el.style.outline = '2px solid var(--accent-text)';
-            el.style.outlineOffset = '2px';
-        });
-        
-        el.addEventListener('blur', () => {
-            el.style.outline = '';
-            el.style.outlineOffset = '';
-        });
-    });
-}
-
-// Initialize focus styles
-addFocusStyles();
-
-// ===== PERFORMANCE OPTIMIZATIONS =====
-
-// Load non-critical CSS asynchronously
-function loadCSSAsync(href) {
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = href;
-    link.media = 'print';
-    link.onload = () => {
-        link.media = 'all';
-    };
-    document.head.appendChild(link);
-}
-
-// Load non-critical resources
-if (window.innerWidth > 768) {
-    // Load additional resources for larger screens
-}
-
 // ===== ERROR HANDLING =====
-
-// Global error handler
 window.addEventListener('error', (e) => {
     console.error('Error:', e.message, e.filename, e.lineno, e.colno);
 });
 
-// Promise rejection handler
 window.addEventListener('unhandledrejection', (e) => {
     console.error('Unhandled rejection:', e.reason);
 });
 
-// ===== SERVICE WORKER REGISTRATION (Optional) =====
-
-// Uncomment to enable PWA functionality
-/*
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js')
-            .then(registration => {
-                console.log('ServiceWorker registration successful');
-            })
-            .catch(err => {
-                console.log('ServiceWorker registration failed: ', err);
-            });
-    });
-}
-*/
-
-// ===== ANALYTICS (Optional) =====
-
-// Uncomment to enable lightweight analytics
-/*
-function initAnalytics() {
-    const script = document.createElement('script');
-    script.defer = true;
-    script.src = 'https://plausible.io/js/plausible.js';
-    script.setAttribute('data-domain', 'yourdomain.com');
-    document.head.appendChild(script);
-}
-
-initAnalytics();
-*/
+// ===== CSS FOR THEME TRANSITION =====
+const style = document.createElement('style');
+style.textContent = `
+    .theme-transition {
+        transition: background-color 0.3s ease, color 0.3s ease !important;
+    }
+    .theme-transition * {
+        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease !important;
+    }
+`;
+document.head.appendChild(style);
