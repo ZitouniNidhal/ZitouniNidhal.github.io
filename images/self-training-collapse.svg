@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250">
+  <defs>
+    <linearGradient id="gradient1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#645cff"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="250" rx="24" fill="url(#gradient1)"/>
+  <rect x="24" y="24" width="352" height="202" rx="20" fill="rgba(255,255,255,0.14)"/>
+  <circle cx="120" cy="110" r="38" fill="rgba(255,255,255,0.33)"/>
+  <circle cx="200" cy="80" r="26" fill="rgba(255,255,255,0.22)"/>
+  <circle cx="260" cy="150" r="20" fill="rgba(255,255,255,0.18)"/>
+  <text x="50%" y="58%" font-family="Inter, sans-serif" font-size="24" fill="#ffffff" font-weight="700" text-anchor="middle">Self-Training</text>
+  <text x="50%" y="74%" font-family="Inter, sans-serif" font-size="16" fill="#e5e7eb" text-anchor="middle">Collapse Project</text>
+</svg>
