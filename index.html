@@ -1,314 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AI Research — Generative AI, RAG, building LLMs, fine-tuning. Portfolio of Zitouni Nidhal, PhD Candidate in AI/ML.">
-    <meta name="keywords" content="AI Research, Generative AI, RAG, LLM, Fine-Tuning, Deep Learning, NLP, Computer Vision, Zitouni Nidhal">
-    <meta name="author" content="Zitouni Nidhal">
-    <meta name="theme-color" content="#f2eefa">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://zitouninidhal.github.io/">
-    <meta property="og:title" content="Zitouni Nidhal | AI Researcher">
-    <meta property="og:description" content="AI Research — Generative AI, RAG, building LLMs, fine-tuning. Portfolio of Zitouni Nidhal.">
-    <meta property="og:image" content="https://avatars.githubusercontent.com/u/88096539?v=4">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Portrait of Zitouni Nidhal, AI Researcher">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Zitouni Nidhal | AI Researcher">
-    <meta name="twitter:description" content="AI Research — Generative AI, RAG, building LLMs, fine-tuning. Portfolio of Zitouni Nidhal.">
-    <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/88096539?v=4">
-    <meta name="twitter:creator" content="@ZitouniNidhal">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-
-    <!-- Preload critical resources -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" as="style">
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
-
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap">
-    <link rel="stylesheet" href="style.css">
-
-    <title>Zitouni Nidhal | AI Researcher & PhD Candidate</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Nidhal Zitouni — AI Developer & M.Sc. in Artificial Intelligence. Building intelligent systems with LLMs, RAG pipelines, FastAPI, and Python.">
+  <title>Nidhal Zitouni</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <!-- Skip to Content Link for Accessibility -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <header class="header" role="banner">
-        <div class="nav-container">
-            <nav class="main-nav" aria-label="Main navigation">
-                <a href="#about">About</a>
-                <a href="#publications">Publications</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-                <a href="#teaching">Teaching</a>
-                <a href="#contact">Contact</a>
-            </nav>
-            <div class="social-icons" aria-label="Social media links">
-                <a href="mailto:nidhal.zitouni@example.com" aria-label="Email" title="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
-                <a href="https://github.com/ZitouniNidhal" aria-label="GitHub" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i></a>
-                <a href="https://scholar.google.com/citations?user=TON_ID" aria-label="Google Scholar" title="Google Scholar" target="_blank" rel="noopener noreferrer"><i class="fas fa-graduation-cap" aria-hidden="true"></i></a>
-                <a href="https://linkedin.com/in/zitouni-nidhal" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                <a href="https://twitter.com/ZitouniNidhal" aria-label="Twitter" title="Twitter" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-                <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
-                    <i class="fas fa-moon" aria-hidden="true"></i>
-                </button>
+  <!-- ═══════════════════════════════════════════════════════
+       HEADER
+       ═══════════════════════════════════════════════════════ -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <div class="site-header__inner">
+        <a href="index.html" class="site-header__logo">Nidhal Zitouni</a>
+
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+          <ul class="site-nav__list" role="list">
+            <li><a href="index.html" class="site-nav__link is-active">Home</a></li>
+            <li><a href="bio.html" class="site-nav__link">About</a></li>
+            <li><a href="publications.html" class="site-nav__link">Publications</a></li>
+            <li><a href="research.html" class="site-nav__link">Experience</a></li>
+            <li><a href="contact.html" class="site-nav__link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button class="site-header__toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav"
+          aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════════
+       MAIN
+       ═══════════════════════════════════════════════════════ -->
+  <main class="site-main" id="main">
+
+    <!-- ── HERO ─────────────────────────────────────────── -->
+    <section class="home-hero" aria-label="Introduction">
+      <div class="container">
+        <div class="home-hero__inner">
+
+          <div class="home-hero__content">
+            <h1 class="home-hero__name">Nidhal<br>Zitouni</h1>
+            <p class="home-hero__tagline">
+              I research and develop intelligent systems at the intersection of Explainable AI, multi-omics data
+              integration, and large language models — with a focus on making clinical decision support both
+              interpretable and trustworthy for the people who rely on it.
+            </p>
+            <div class="home-hero__actions">
+              <a href="bio.html" class="btn btn--primary">About me</a>
+              <a href="publications.html" class="btn btn--outline">Publications</a>
+              <a href="research.html" class="btn btn--outline">Experience</a>
             </div>
-            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-                <i class="fas fa-bars" aria-hidden="true"></i>
-            </button>
+          </div>
+
+          <div class="home-hero__photo">
+            <img src="assets/img/profile.jpg" alt="Nidhal Zitouni" width="360" height="480">
+          </div>
+
         </div>
-    </header>
+      </div>
+    </section>
 
-    <main id="main-content" class="container" role="main">
-        <!-- Hero Section -->
-        <section class="hero" aria-labelledby="hero-heading">
-            <div class="hero-content">
-                <h1 id="hero-heading"><strong>ZITOUNI</strong></h1>
-                <p class="hero-tagline">
-                    <span class="highlight">AI Researcher</span> & <span class="highlight">PhD Candidate</span>
-                </p>
-                <p class="hero-subtitle">
-                    Specialized in <strong>Generative AI</strong>, <strong>RAG</strong>, <strong>LLMs</strong>, and <strong>Computer Vision</strong>
-                </p>
+    <!-- ── STATS STRIP ───────────────────────────────────── -->
+    <div class="home-stats" aria-label="At a glance">
+      <div class="container">
+        <div class="home-stats__inner">
+          <div class="home-stats__item">
+            <span class="home-stats__number">2</span>
+            <span class="home-stats__label">Publications</span>
+          </div>
+          <div class="home-stats__divider" aria-hidden="true"></div>
+          <div class="home-stats__item">
+            <span class="home-stats__number">4+</span>
+            <span class="home-stats__label">Professional AI Roles</span>
+          </div>
+          <div class="home-stats__divider" aria-hidden="true"></div>
+          <div class="home-stats__item">
+            <span class="home-stats__number">M.Sc.</span>
+            <span class="home-stats__label">Artificial Intelligence</span>
+          </div>
+          <div class="home-stats__divider" aria-hidden="true"></div>
+          <div class="home-stats__item">
+            <span class="home-stats__number">Python</span>
+            <span class="home-stats__label">LLMs · RAG · FastAPI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── KEY AREAS ──────────────────────────────── -->
+    <section class="home-section" aria-labelledby="home-research-heading">
+      <div class="container">
+        <span class="section-label">Key Areas</span>
+        <h2 class="section-title" id="home-research-heading">
+          What am I currently working on?
+        </h2>
+
+        <div class="research-grid">
+
+          <article class="card card--image">
+            <div class="research-card__thumbnail">
+              <img src="assets/img/theme1.jpg" alt="AI Agent Development">
             </div>
-        </section>
-
-        <!-- About Section -->
-        <section class="profile-section" id="about" aria-labelledby="about-heading">
-            <div class="profile-image">
-                <img
-                    src="https://avatars.githubusercontent.com/u/88096539?v=4"
-                    alt="Portrait of Zitouni Nidhal"
-                    loading="lazy"
-                    width="260"
-                    height="260"
-                >
+            <div class="research-card">
+              <span class="research-card__number" aria-hidden="true">01</span>
+              <h3 class="research-card__title">AI Agent<br>Development</h3>
+              <p class="research-card__desc">
+                Building autonomous LLM-powered agents with prompt engineering, tool use, and
+                multi-step reasoning. Work spans NeuralSeek's enterprise AI platform and Micro1's
+                candidate assessment systems.
+              </p>
+              <a href="research.html" class="research-card__link">View experience →</a>
             </div>
-            <div class="profile-bio">
-                <h2 id="about-heading">About Me</h2>
-                <p>
-                    I'm a <strong>PhD Candidate in AI/ML</strong> with a focus on <strong>Generative AI, Retrieval-Augmented Generation (RAG), and Large Language Models (LLMs)</strong>.
-                    My research explores the boundaries of AI systems, from <strong>self-training dynamics in LLMs</strong> to <strong>automated neural architecture search</strong>.
-                </p>
-                <p>
-                    With a background in <strong>Computer Vision, Deep Learning, GNN</strong>, I bridge the gap between theoretical research and real-world applications.
-                    I'm passionate about building AI systems that are <strong>efficient, interpretable, and scalable</strong>.
-                </p>
-                <p>
-                    My work has been published in international conferences and implemented in open-source projects.
-                    I actively contribute to the AI community through <a href="https://github.com/ZitouniNidhal" target="_blank" rel="noopener noreferrer">GitHub</a> and <a href="https://scholar.google.com/citations?user=TON_ID" target="_blank" rel="noopener noreferrer">Google Scholar</a>.
-                </p>
-                <div class="tech-badges">
-                    <span class="badge">PyTorch</span>
-                    <span class="badge">Transformers</span>
-                    <span class="badge">LangChain</span>
-                    <span class="badge">Hugging Face</span>
-                    <span class="badge">Python</span>
-                    <span class="badge">TensorFlow</span>
-                    <span class="badge">OpenCV</span>
-                </div>
+          </article>
+
+          <article class="card card--image">
+            <div class="research-card__thumbnail">
+              <img src="assets/img/theme2.jpg" alt="Explainable AI in Healthcare">
             </div>
-        </section>
-
-        <!-- Publications Section -->
-        <section class="section" id="publications" aria-labelledby="publications-heading">
-            <h2 id="publications-heading" class="section-heading">Publications</h2>
-            <div class="publications-grid">
-                <article class="publication-card">
-                    <h3>Self-Training Collapse in Large Language Models</h3>
-                    <p class="publication-meta">
-                        <span class="date-badge">2026</span>
-                        <span class="conference">ICML 2026</span>
-                    </p>
-                    <p class="publication-abstract">
-                        Investigating the collapse dynamics in self-training loops of LLMs and proposing interventions to maintain stability.
-                    </p>
-                    <div class="publication-links">
-                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf" aria-hidden="true"></i> PDF</a>
-                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
-                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-link" aria-hidden="true"></i> arXiv</a>
-                    </div>
-                </article>
-
-                <article class="publication-card">
-                    <h3>Retrieval-Augmented Generation for Domain-Specific Knowledge</h3>
-                    <p class="publication-meta">
-                        <span class="date-badge">2025</span>
-                        <span class="conference">NeurIPS 2025</span>
-                    </p>
-                    <p class="publication-abstract">
-                        A novel RAG framework for grounding LLMs in domain-specific knowledge with improved retrieval accuracy.
-                    </p>
-                    <div class="publication-links">
-                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf" aria-hidden="true"></i> PDF</a>
-                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
-                    </div>
-                </article>
-
-                <article class="publication-card">
-                    <h3>Self-Designing Neural Networks: An Evolutionary Approach</h3>
-                    <p class="publication-meta">
-                        <span class="date-badge">2025</span>
-                        <span class="conference">ICLR 2025</span>
-                    </p>
-                    <p class="publication-abstract">
-                        Automated neural architecture search using evolutionary strategies to discover efficient architectures.
-                    </p>
-                    <div class="publication-links">
-                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf" aria-hidden="true"></i> PDF</a>
-                        <a href="https://github.com/ZitouniNidhal/Self-Designing-Neural-Networks--SDNN-" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
-                    </div>
-                </article>
+            <div class="research-card">
+              <span class="research-card__number" aria-hidden="true">02</span>
+              <h3 class="research-card__title">Explainable AI<br>in Healthcare</h3>
+              <p class="research-card__desc">
+                Developing XAI models for clinical decision support and multi-omics data integration
+                pipelines for precision oncology — combining SHAP, LIME, and deep learning
+                for interpretable medical AI.
+              </p>
+              <a href="research.html" class="research-card__link">View research →</a>
             </div>
-        </section>
+          </article>
 
-        <!-- Projects Section -->
-        <section class="section" id="projects" aria-labelledby="projects-heading">
-            <h2 id="projects-heading" class="section-heading">Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/self-training-collapse.svg" alt="Self-Training Collapse Project" loading="lazy">
-                    </div>
-                    <h3>Self-Training Collapse</h3>
-                    <p>Studying collapse dynamics in self-training loops of LLMs with interventions for stability.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/ZitouniNidhal/self_training_collapse" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
-                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt" aria-hidden="true"></i> Paper</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/sdnn.svg" alt="Self-Designing Neural Networks Project" loading="lazy">
-                    </div>
-                    <h3>Self-Designing Neural Networks (SDNN)</h3>
-                    <p>Automated Neural Architecture Search (NAS) framework using evolutionary strategies.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/ZitouniNidhal/Self-Designing-Neural-Networks--SDNN-" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
-                        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-link" aria-hidden="true"></i> Demo</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/gp-state-space.svg" alt="Gaussian Process State-Space Models Project" loading="lazy">
-                    </div>
-                    <h3>Gaussian Process State-Space Models</h3>
-                    <p>Probabilistic time-series analysis framework combining GPs with state-space representations.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/ZitouniNidhal/gaussian-process-state-space-models" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
-                    </div>
-                </div>
+          <article class="card card--image">
+            <div class="research-card__thumbnail">
+              <img src="assets/img/theme3.jpg" alt="Backend and AI Integration">
             </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section class="section" id="skills" aria-labelledby="skills-heading">
-            <h2 id="skills-heading" class="section-heading">Technical Skills</h2>
-            <div class="skills-container">
-                <div class="skills-category">
-                    <h3>Generative AI & LLMs</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item"><i class="fas fa-robot" aria-hidden="true"></i> LLM Fine-Tuning</div>
-                        <div class="skill-item"><i class="fas fa-database" aria-hidden="true"></i> RAG Pipelines</div>
-                        <div class="skill-item"><i class="fas fa-brain" aria-hidden="true"></i> Prompt Engineering</div>
-                        <div class="skill-item"><i class="fas fa-layer-group" aria-hidden="true"></i> Neural Architecture Search</div>
-                        <div class="skill-item"><i class="fas fa-memory" aria-hidden="true"></i> Model Distillation</div>
-                    </div>
-                </div>
-
-                <div class="skills-category">
-                    <h3>Deep Learning & Computer Vision</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item"><i class="fas fa-code" aria-hidden="true"></i> PyTorch</div>
-                        <div class="skill-item"><i class="fas fa-code" aria-hidden="true"></i> TensorFlow</div>
-                        <div class="skill-item"><i class="fas fa-eye" aria-hidden="true"></i> OpenCV</div>
-                        <div class="skill-item"><i class="fas fa-cube" aria-hidden="true"></i> 3D Modeling</div>
-                        <div class="skill-item"><i class="fas fa-image" aria-hidden="true"></i> Image Processing</div>
-                    </div>
-                </div>
-
-                <div class="skills-category">
-                    <h3>Tools & Frameworks</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item"><i class="fab fa-python" aria-hidden="true"></i> Python</div>
-                        <div class="skill-item"><i class="fas fa-chart-line" aria-hidden="true"></i> NumPy/Pandas</div>
-                        <div class="skill-item"><i class="fas fa-server" aria-hidden="true"></i> Docker</div>
-                        <div class="skill-item"><i class="fas fa-cloud" aria-hidden="true"></i> AWS/GCP</div>
-                        <div class="skill-item"><i class="fas fa-terminal" aria-hidden="true"></i> Linux/CLI</div>
-                    </div>
-                </div>
+            <div class="research-card">
+              <span class="research-card__number" aria-hidden="true">03</span>
+              <h3 class="research-card__title">Backend &amp;<br>AI Integration</h3>
+              <p class="research-card__desc">
+                Designing scalable REST APIs with FastAPI, integrating RAG pipelines and
+                vector databases, and deploying AI services with Docker and PostgreSQL
+                for production-grade intelligent applications.
+              </p>
+              <a href="research.html" class="research-card__link">View projects →</a>
             </div>
-        </section>
+          </article>
 
-        <!-- Teaching Section -->
-        <section class="section" id="teaching" aria-labelledby="teaching-heading">
-            <h2 id="teaching-heading" class="section-heading">Teaching</h2>
-            <div class="teaching-container">
-                <div class="teaching-card">
-                    <h3>Deep Learning Fundamentals</h3>
-                    <p>Introduction to neural networks, CNNs, RNNs, and Transformers.</p>
-                    <p class="teaching-meta"><strong>Level:</strong> Beginner to Intermediate | <strong>Format:</strong> Workshop</p>
-                </div>
-                <div class="teaching-card">
-                    <h3>Advanced NLP with LLMs</h3>
-                    <p>Fine-tuning LLMs, prompt engineering, and RAG systems.</p>
-                    <p class="teaching-meta"><strong>Level:</strong> Advanced | <strong>Format:</strong> Course</p>
-                </div>
-                <div class="teaching-card">
-                    <h3>Probabilistic Machine Learning</h3>
-                    <p>Gaussian Processes, Bayesian inference, and state-space models.</p>
-                    <p class="teaching-meta"><strong>Level:</strong> Advanced | <strong>Format:</strong> Seminar</p>
-                </div>
+        </div>
+
+        <div class="home-section__footer">
+          <a href="research.html" class="btn btn--outline">All experience &amp; projects</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SELECTED PUBLICATIONS ────────────────────────── -->
+    <section class="home-section" aria-labelledby="home-pubs-heading">
+      <div class="container">
+        <span class="section-label">Recent Publications</span>
+        <h2 class="section-title" id="home-pubs-heading">
+          I publish at international venues on AI, explainability, and data-driven healthcare systems.
+        </h2>
+
+        <div class="pub-list" role="list">
+
+          <article class="pub-item" role="listitem">
+            <span class="pub-item__year">2026</span>
+            <div class="pub-item__body">
+              <span class="pub-item__venue">IARIA EXPLAINABILITY</span>
+              <a href="publications.html" class="pub-item__title">
+                A Modular Multi-Omics Data Integration Framework for Precision Oncology
+                Using Explainable AI
+              </a>
+              <p class="pub-item__authors">
+                Nidhal Zitouni · Accepted 2026
+              </p>
             </div>
-        </section>
+          </article>
 
-        <!-- Contact Section -->
-        <section class="section" id="contact" aria-labelledby="contact-heading">
-            <h2 id="contact-heading" class="section-heading">Get In Touch</h2>
-            <div class="contact-container">
-                <div class="contact-card">
-                    <h3>Open to Collaborations</h3>
-                    <p>
-                        I'm always open to discussing AI/ML research projects, collaborations, or industry opportunities.
-                        Feel free to reach out via email or connect with me on social media.
-                    </p>
-                    <div class="contact-links">
-                        <a href="mailto:nidhal.zitouni@example.com" class="contact-button">
-                            <i class="fas fa-envelope" aria-hidden="true"></i> Email Me
-                        </a>
-                        <a href="https://github.com/ZitouniNidhal" class="contact-button" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-github" aria-hidden="true"></i> GitHub
-                        </a>
-                        <a href="https://linkedin.com/in/zitouni-nidhal" class="contact-button" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
-                        </a>
-                    </div>
-                </div>
-                <div class="contact-card">
-                    <h3>Newsletter</h3>
-                    <p>Subscribe to stay updated on my latest research and projects.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Your email address" required>
-                        <button type="submit"><i class="fas fa-paper-plane" aria-hidden="true"></i> Subscribe</button>
-                    </form>
-                </div>
+          <article class="pub-item" role="listitem">
+            <span class="pub-item__year">2026</span>
+            <div class="pub-item__body">
+              <span class="pub-item__venue">WorldS4 2026</span>
+              <a href="publications.html" class="pub-item__title">
+                A Scalable and FAIR-Compliant Multi-Omics Integration Pipeline
+                for Clinical and Genomic Data
+              </a>
+              <p class="pub-item__authors">
+                Nidhal Zitouni · Accepted 2026
+              </p>
             </div>
-        </section>
-    </main>
+          </article>
 
-    <!-- Load scripts at the end of body for performance -->
-    <script src="script.js"></script>
+        </div>
+
+        <div class="home-section__footer">
+          <a href="publications.html" class="btn btn--outline">View all publications</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════════════ -->
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="container">
+      <div class="site-footer__inner">
+        <div>
+          <p class="site-footer__name">Nidhal Zitouni</p>
+          <p class="site-footer__role">AI Developer · M.Sc. Artificial Intelligence</p>
+        </div>
+        <nav class="site-footer__nav" aria-label="Footer navigation">
+          <a href="bio.html">About</a>
+          <a href="publications.html">Publications</a>
+          <a href="research.html">Experience</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="site-footer__bottom">
+          <span>© 2026 Nidhal Zitouni</span>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
+
 </html>

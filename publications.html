@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Publications — Nidhal Zitouni, AI Developer. Research on Explainable AI, multi-omics data integration, and precision oncology.">
+  <title>Publications — Nidhal Zitouni</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════
+       HEADER
+       ═══════════════════════════════════════════════════════ -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <div class="site-header__inner">
+        <a href="index.html" class="site-header__logo">Nidhal Zitouni</a>
+
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+          <ul class="site-nav__list" role="list">
+            <li><a href="index.html" class="site-nav__link">Home</a></li>
+            <li><a href="bio.html" class="site-nav__link">About</a></li>
+            <li><a href="publications.html" class="site-nav__link is-active">Publications</a></li>
+            <li><a href="research.html" class="site-nav__link">Experience</a></li>
+            <li><a href="contact.html" class="site-nav__link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button class="site-header__toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav"
+          aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════════
+       MAIN
+       ═══════════════════════════════════════════════════════ -->
+  <main class="site-main" id="main">
+
+    <!-- ── PAGE HERO ─────────────────────────────────────── -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <span class="page-hero__eyebrow">Publications</span>
+        <h1 class="page-hero__title" id="page-title">Conference papers<br>and journal articles</h1>
+        <p class="page-hero__desc">
+          Published at IARIA EXPLAINABILITY 2026 and WorldS4 2026 on AI and clinical data science
+        </p>
+      </div>
+    </section>
+
+    <!-- ── PUBLICATIONS ─────────────────────────────────────── -->
+    <section class="home-section" aria-labelledby="pubs-2026-heading">
+      <div class="container">
+        <span class="section-label">2026</span>
+        <h2 class="section-title" id="pubs-2026-heading">
+          Accepted papers.
+        </h2>
+
+        <div class="pub-list" role="list">
+
+          <article class="pub-item" role="listitem">
+            <span class="pub-item__year">2026</span>
+            <div class="pub-item__body">
+              <span class="pub-item__venue">IARIA EXPLAINABILITY 2026</span>
+              <p class="pub-item__title"
+                style="font-weight:600; font-size:1.125rem; color: var(--clr-navy); line-height:1.4;">
+                A Modular Multi-Omics Data Integration Framework for Precision Oncology
+                Using Explainable AI
+              </p>
+              <p class="pub-item__authors">
+                Nidhal Zitouni
+              </p>
+              <p style="margin-top:0.75rem; color: var(--clr-text-muted); font-size:0.9375rem; line-height:1.7;">
+                This paper presents a modular framework for integrating heterogeneous multi-omics
+                data (genomics, transcriptomics, proteomics) for cancer subtype classification.
+                The framework employs deep learning feature encoders combined with SHAP-based
+                explainability layers, enabling oncologists to trace model predictions back to
+                biologically meaningful features. The pipeline follows FAIR data principles
+                for reproducibility and interoperability across clinical datasets.
+              </p>
+            </div>
+          </article>
+
+          <article class="pub-item" role="listitem">
+            <span class="pub-item__year">2026</span>
+            <div class="pub-item__body">
+              <span class="pub-item__venue">WorldS4 2026</span>
+              <p class="pub-item__title"
+                style="font-weight:600; font-size:1.125rem; color: var(--clr-navy); line-height:1.4;">
+                A Scalable and FAIR-Compliant Multi-Omics Integration Pipeline
+                for Clinical and Genomic Data
+              </p>
+              <p class="pub-item__authors">
+                Nidhal Zitouni
+              </p>
+              <p style="margin-top:0.75rem; color: var(--clr-text-muted); font-size:0.9375rem; line-height:1.7;">
+                This work describes a scalable, standards-compliant data integration pipeline
+                designed to handle large-scale clinical and genomic datasets. The system
+                harmonises multi-omics inputs using ontology-based normalisation and
+                provides AI-ready data outputs for downstream machine learning tasks.
+                Benchmarked against real-world oncology cohorts to validate scalability
+                and FAIR compliance (Findable, Accessible, Interoperable, Reusable).
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════════════ -->
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="container">
+      <div class="site-footer__inner">
+        <div>
+          <p class="site-footer__name">Nidhal Zitouni</p>
+          <p class="site-footer__role">AI Developer · M.Sc. Artificial Intelligence</p>
+        </div>
+        <nav class="site-footer__nav" aria-label="Footer navigation">
+          <a href="bio.html">About</a>
+          <a href="publications.html">Publications</a>
+          <a href="research.html">Experience</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="site-footer__bottom">
+          <span>© 2026 Nidhal Zitouni</span>
+          
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
