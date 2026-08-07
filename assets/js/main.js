@@ -58,4 +58,31 @@
     document.body.style.overflow = '';
   }
 
+  /* ── Dark mode toggle ────────────────────────────────── */
+  const themeToggle = document.getElementById('theme-toggle');
+  
+  function setTheme(themeName) {
+    document.documentElement.setAttribute('data-theme', themeName);
+    localStorage.setItem('theme', themeName);
+  }
+
+  // Check for saved theme preference or OS preference
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+    setTheme(savedTheme);
+  } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    setTheme('dark');
+  }
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', function () {
+      if (document.documentElement.getAttribute('data-theme') === 'dark') {
+        setTheme('light');
+      } else {
+        setTheme('dark');
+      }
+    });
+  }
+
 })();
+
