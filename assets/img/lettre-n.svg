@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="logoTitle">
   <title id="logoTitle">Nidhal Zitouni logo</title>
-  <rect width="64" height="64" rx="16" fill="#0f172a"/>
-  <path d="M18 16h8l10 20 10-20h8v32h-8V28l-10 20-10-20v20h-8V16z" fill="#f8fafc"/>
+  <rect width="64" height="64" rx="16" fill="#000000"/>
+  <path d="M18 16v32h6l14-22v22h6V16h-6l-14 22V16h-6Z" fill="#ffffff"/>
 </svg>

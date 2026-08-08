@@ -3,16 +3,16 @@
    ============================================================ */
 :root {
   /* Colours */
-  --clr-navy:         #1a1e3a;
-  --clr-charcoal:     #2d2d3a;
-  --clr-accent:       #d4613a;
-  --clr-accent-light: #f5e1d3;
-  --clr-bg:           #f8f7f4;
-  --clr-bg-alt:       #f0ede7;
-  --clr-white:        #ffffff;
-  --clr-text:         #1a1e3a;
-  --clr-text-muted:   #6b6a7a;
-  --clr-border:       #e2dfd9;
+  --clr-navy:         #f8f7f4;
+  --clr-charcoal:     #d1d0c5;
+  --clr-accent:       #e8835e;
+  --clr-accent-light: #3d2a23;
+  --clr-bg:           #000000;
+  --clr-bg-alt:       #121212;
+  --clr-white:        #121212;
+  --clr-text:         #e2dfd9;
+  --clr-text-muted:   #9a988d;
+  --clr-border:       #2c2c2c;
 
   /* Typography */
   --ff-display: 'Fraunces', Georgia, serif;
