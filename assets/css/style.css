@@ -91,6 +91,66 @@
   --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.6);
 }
 
+/* Dark mode — elements that use inverted color schemes */
+[data-theme="dark"] .site-footer {
+  background: #0a0a0a;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+[data-theme="dark"] .site-footer__name {
+  color: #f8f7f4;
+}
+
+[data-theme="dark"] .site-footer__bottom {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .site-header {
+  background: #121212;
+  border-bottom-color: #2c2c2c;
+}
+
+[data-theme="dark"] .pub-filter-btn.is-active {
+  background: #e8835e;
+  color: #121212;
+}
+
+[data-theme="dark"] .btn--primary {
+  background: #e8835e;
+  border-color: #e8835e;
+  color: #121212;
+}
+
+[data-theme="dark"] .btn--primary:hover {
+  background: #f09a78;
+  border-color: #f09a78;
+}
+
+[data-theme="dark"] .btn--outline {
+  border-color: #9a988d;
+  color: #e2dfd9;
+}
+
+[data-theme="dark"] .btn--outline:hover {
+  background: #e8835e;
+  border-color: #e8835e;
+  color: #121212;
+}
+
+[data-theme="dark"] .pub-item__badge--best {
+  background: #3d2a10;
+  color: #fbbf24;
+}
+
+[data-theme="dark"] .pub-item__badge--hm {
+  background: #1e2a4a;
+  color: #60a5fa;
+}
+
+[data-theme="dark"] .site-nav {
+  background: #121212;
+}
+
 
 /* ============================================================
    RESET
@@ -1167,7 +1227,7 @@ p {
    FOOTER
    ============================================================ */
 .site-footer {
-  background: var(--clr-navy);
+  background: #1a1e3a;
   color: rgba(255, 255, 255, 0.55);
   padding-block: var(--sp-12) var(--sp-8);
   margin-block-start: var(--sp-24);
@@ -1184,7 +1244,7 @@ p {
   font-family: var(--ff-display);
   font-size: var(--fs-xl);
   font-weight: var(--fw-semibold);
-  color: var(--clr-white);
+  color: #ffffff;
   letter-spacing: var(--ls-tight);
   line-height: var(--lh-tight);
   margin-block-end: var(--sp-2);
