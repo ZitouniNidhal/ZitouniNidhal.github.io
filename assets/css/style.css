@@ -1208,6 +1208,30 @@ p {
   border-color: transparent;
 }
 
+.contact-card__icon {
+  width: 2.6rem;
+  height: 2.6rem;
+  display: grid;
+  place-items: center;
+  border-radius: 0.8rem;
+  background: #f5efe9;
+  border: 1px solid #eadbcf;
+  color: var(--clr-accent);
+  margin-block-end: var(--sp-1);
+}
+
+.contact-card__icon svg {
+  width: 1.4rem;
+  height: 1.4rem;
+  fill: currentColor;
+}
+
+.contact-card--rg .contact-card__icon {
+  background: #f5efe9;
+  color: var(--clr-accent);
+  border-color: #eadbcf;
+}
+
 .contact-card__label {
   font-size: var(--fs-xs);
   font-weight: var(--fw-medium);
