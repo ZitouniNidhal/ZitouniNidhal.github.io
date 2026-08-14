@@ -1304,14 +1304,14 @@ p {
 }
 
 .brand-icon {
-  width: 1.3em;
-  height: 1.3em;
+  width: 1em;
+  height: 1em;
   flex-shrink: 0;
 }
 
 .orcid-icon {
-  width: 1.4em;
-  height: 1.4em;
+  width: 1.1em;
+  height: 1.1em;
 }
 
 .site-footer__brand-link:hover {
