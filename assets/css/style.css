@@ -1278,6 +1278,63 @@ p {
   align-items: start;
 }
 
+.site-footer__brand {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-block-end: var(--sp-3);
+  font-family: var(--ff-display);
+  font-size: clamp(1.1rem, 1.8vw, 1.9rem);
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.site-footer__brand-link {
+  color: var(--clr-navy);
+  font-weight: var(--fw-bold);
+  transition: color var(--transition), opacity var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+}
+
+.site-footer__brand-link--muted {
+  font-weight: var(--fw-medium);
+  opacity: 0.9;
+}
+
+.site-footer__brand-link--small {
+  font-size: 0.72em;
+  letter-spacing: 0.04em;
+  text-transform: lowercase;
+  font-weight: var(--fw-medium);
+  opacity: 0.8;
+}
+
+.site-footer__brand-link--orcid {
+  font-size: 0.75em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-weight: var(--fw-medium);
+  opacity: 0.85;
+}
+
+.site-footer__brand-icon {
+  width: 1.1em;
+  height: 1.1em;
+  flex-shrink: 0;
+}
+
+.site-footer__brand-link:hover {
+  color: var(--clr-accent);
+}
+
+.site-footer__brand-separator {
+  color: var(--clr-accent);
+  opacity: 0.9;
+}
+
 .site-footer__name {
   font-family: var(--ff-display);
   font-size: var(--fs-xl);
