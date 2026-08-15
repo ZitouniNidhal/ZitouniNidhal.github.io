@@ -1,0 +1,5 @@
+unzip Self-Improving-RL-Agent-for-Automated-AI-Research.zip
+cd Self-Improving-RL-Agent-for-Automated-AI-Research
+git remote add origin https://github.com/ZitouniNidhal/Self-Improving-RL-Agent-for-Automated-AI-Research--Meta-Reinforcement-Learning-System-.git
+git branch -M main
+git push -u origin main
